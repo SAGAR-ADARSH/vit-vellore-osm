@@ -1,0 +1,11 @@
+# Local web-server / editor artifacts
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local caches for extracted OSM data (keep committed dataset in data/)
+*.pyc
+__pycache__/
+node_modules/
