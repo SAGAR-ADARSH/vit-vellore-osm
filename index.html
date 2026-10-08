@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive OpenStreetMap-based campus map starter for VIT Vellore and future Dijkstra routing.">
+  <title>VIT Vellore Campus Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><p class="eyebrow">CAMPUS NAVIGATION STARTER</p><h1>VIT Vellore</h1><p class="subtitle">Explore the campus map and prepare walking paths for shortest-route navigation.</p></div>
+    <button id="campusButton" class="locate-button" type="button">⌖ <span>Campus view</span></button>
+  </header>
+  <main>
+    <section class="map-panel" aria-label="Interactive map of VIT Vellore">
+      <div id="map" role="application" aria-label="OpenStreetMap centered on VIT Vellore"></div>
+      <div class="map-caption"><span class="status-dot"></span> OpenStreetMap · VIT Vellore</div>
+    </section>
+    <section class="info-grid" aria-label="Project information">
+      <article class="info-card"><span class="card-icon">⌖</span><div><h2>Campus focused</h2><p>Centered near <strong>12.9697° N, 79.1607° E</strong>. Zoom and pan to explore nearby campus roads and paths.</p></div></article>
+      <article class="info-card"><span class="card-icon">↗</span><div><h2>Ready for routing</h2><p>Use road and walking-path geometry as graph edges, then attach verified distances as Dijkstra weights.</p></div></article>
+    </section>
+    <footer>Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a> · Tiles © OpenStreetMap</footer>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
