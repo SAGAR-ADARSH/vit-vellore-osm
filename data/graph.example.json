@@ -1,0 +1,17 @@
+{
+  "units": "meters",
+  "nodes": [
+    { "id": "gate", "name": "Main Gate", "lat": 12.9697, "lon": 79.1607 },
+    { "id": "landmark-1", "name": "Example campus landmark", "lat": 12.9702, "lon": 79.1613 }
+  ],
+  "edges": [
+    {
+      "from": "gate",
+      "to": "landmark-1",
+      "distance": 85,
+      "bidirectional": true,
+      "geometry": [[12.9697, 79.1607], [12.9699, 79.1609], [12.9702, 79.1613]],
+      "source": "example only; replace with mapped or manually verified walking path"
+    }
+  ]
+}
