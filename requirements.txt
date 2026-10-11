@@ -3,3 +3,4 @@ folium
 osmnx
 xmltodict
 numpy
+matplotlib
